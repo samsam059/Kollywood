@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kollywood Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="settings-container">
+            <button id="settings-button">⚙️</button>
+        </div>
+        <h1 id="display-word">KOLLYWOOD</h1>
+        <div id="instructions">Guess the Hero name:</div>
+
+        <div id="hints">
+            <div class="hint-box" id="hero-hint">Hero: </div>
+            <div class="hint-box" id="heroine-hint">Heroine: </div>
+            <div class="hint-box" id="movie-hint">Movie: </div>
+            <div class="hint-box" id="song-hint">Song: </div>
+        </div>
+
+        <input type="text" id="input-field" placeholder="Type your guess here...">
+        <button id="submit-button">Submit</button>
+
+        <div id="game-log"></div>
+        <!-- Game Over Message -->
+        <div id="game-over-message" class="hidden" style="font-size:15px;"></div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Change Kollywood Names</h2>
+            <label for="hero-name">Hero:</label>
+            <input type="text" id="hero-name" placeholder="Enter Hero name"><br><br>
+            <label for="heroine-name">Heroine:</label>
+            <input type="text" id="heroine-name" placeholder="Enter Heroine name"><br><br>
+            <label for="movie-name">Movie:</label>
+            <input type="text" id="movie-name" placeholder="Enter Movie name"><br><br>
+            <label for="song-name">Song:</label>
+            <input type="text" id="song-name" placeholder="Enter Song name" ><br><br>
+            <button id="save-settings">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
